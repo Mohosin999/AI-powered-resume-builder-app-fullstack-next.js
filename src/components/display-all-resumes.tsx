@@ -78,19 +78,31 @@ const DisplayAllResumes = ({ allResumes }: ResumeUpdateProps) => {
                     <BsThreeDotsVertical size={20} />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
-                    <Link href={`/dashboard/${resume.id}/personal-details`}>
+                    <Link
+                      href={`/dashboard/${resume.id}/personal-details`}
+                      className="cursor-pointer"
+                    >
                       <DropdownMenuItem>Edit</DropdownMenuItem>
                     </Link>
                     <DropdownMenuSeparator />
-                    <Link href={`/dashboard/${resume.id}/preview-resume`}>
+                    <Link
+                      href={`/dashboard/${resume.id}/preview-resume`}
+                      className="cursor-pointer"
+                    >
                       <DropdownMenuItem>Preview</DropdownMenuItem>
                     </Link>
                     <DropdownMenuSeparator />
-                    <Link href={`/dashboard/${resume.id}/preview-resume`}>
+                    <Link
+                      href={`/dashboard/${resume.id}/preview-resume`}
+                      className="cursor-pointer"
+                    >
                       <DropdownMenuItem>Download</DropdownMenuItem>
                     </Link>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem onClick={() => setDeleteId(resume.id)}>
+                    <DropdownMenuItem
+                      onClick={() => setDeleteId(resume.id)}
+                      className="cursor-pointer"
+                    >
                       Delete
                     </DropdownMenuItem>
                   </DropdownMenuContent>
